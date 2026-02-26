@@ -1,74 +1,39 @@
-# Data Project Template
+# High Speed Running (HSR) Decay in the Uganda Premier League
 
-<a target="_blank" href="https://datalumina.com/">
-    <img src="https://img.shields.io/badge/Datalumina-Project%20Template-2856f7" alt="Datalumina Project" />
-</a>
+**Season:** 2024/25 UPL  
+**Data:** Catapult GPS (Catapult One)  
+**Author:** Humphrey Nyanzi
 
-## Cookiecutter Data Science
-This project template is a simplified version of the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) template, created to suit the needs of Datalumina and made available as a GitHub template.
-
-## Adjusting .gitignore
-
-Ensure you adjust the `.gitignore` file according to your project needs. For example, since this is a template, the `/data/` folder is commented out and data will not be exlucded from source control:
-
-```plaintext
-# exclude data from source control by default
-# /data/
-```
-
-Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
-
-## Duplicating the .env File
-To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
-
-```bash
-cp .env.example .env # Linux, macOS, Git Bash, WSL
-copy .env.example .env # Windows Command Prompt
-```
-
-This command creates a copy of `.env.example` and names it `.env`, allowing you to configure your environment variables specific to your setup.
-
-
-## Project Organization
+## Project Structure
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── README.md          <- The top-level README for developers using this project
-├── data
-│   ├── external       <- Data from third party sources
-│   ├── interim        <- Intermediate data that has been transformed
-│   ├── processed      <- The final, canonical data sets for modeling
-│   └── raw            <- The original, immutable data dump
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-└── src                         <- Source code for this project
-    │
-    ├── __init__.py             <- Makes src a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    │    
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    ├── plots.py                <- Code to create visualizations 
-    │
-    └── services                <- Service classes to connect with external platforms, tools, or APIs
-        └── __init__.py 
+upl-hsr-decay/
+├── data/
+│   ├── raw/              # Original Catapult exports — do not modify
+│   └── processed/        # Cleaned, merged, analysis-ready files
+├── notebooks/
+│   ├── 01_data_audit.ipynb       # Sanity checks, completeness, distributions
+│   ├── 02_cleaning.ipynb         # Filtering, parsing, feature engineering
+│   ├── 03_analysis.ipynb         # Statistical tests (paired t, ANOVA)
+│   └── 04_visualizations.ipynb   # All final charts and figures
+├── outputs/
+│   ├── figures/          # Saved plots (.png)
+│   └── tables/           # Summary stats, test results (.csv)
+├── docs/
+│   └── project_brief.docx
+└── README.md
 ```
+
+## Notebooks (run in order)
+
+1. **01_data_audit** — load raw data, check completeness, flag issues
+2. **02_cleaning** — apply inclusion criteria, parse position/outcome, calculate HSR_rate
+3. **03_analysis** — paired t-test (decay), ANOVA by position, ANOVA by outcome
+4. **04_visualizations** — boxplots, bar charts, summary visuals for FUFA and portfolio
+
+## Key Decisions
+
+- Metric: HSR Rate = (SZ4_km + SZ5_km) * 1000 / (duration_s / 60)
+- Exclusions: Goalkeepers, players with < 35 min in either half
+- Positions: DEF, MID, FWD (parsed from GPS session tags)
+- Outcome: WIN / DRAW / LOSS (parsed from session title string)
