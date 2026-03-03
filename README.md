@@ -72,7 +72,7 @@ upl-hsr-decay/
 
 ```
 
-The raw GPS data is not included — access to full-season multi-club tracking data from a domestic league is not publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult, StatSports, or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
+The raw GPS data is not included, access to full-season multi-club tracking data from the  league is not publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult One, or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
 
 ---
 
