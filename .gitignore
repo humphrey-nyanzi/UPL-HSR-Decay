@@ -96,3 +96,5 @@ target/
 /data/
 /output/
 /assets/
+.env.example
+.gitignore
