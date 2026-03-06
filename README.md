@@ -85,3 +85,9 @@ Mäkiniemi, J. K., Savolainen, E. H., Finni, T., & Ihalainen, J. (2022). Positio
 Thoseby, B., Govus, A., Clarke, A., Middleton, K., & Dascombe, B. (2022). Positional and temporal differences in peak match running demands of elite football. *Biology of Sport, 40*, 311–319.
 
 Van de Casteele, F., Deprez, D., Van Haaren, J., Derave, W., & Lievens, E. (2023). In professional football the decline in high-intensity running activities from first to second half is more pronounced in players with a fast muscle typology. *Scandinavian Journal of Medicine and Science in Sports, 34*.
+
+---
+
+**Humphrey Nyanzi**  
+Sports Scientist & Data Analyst   
+[GitHub](https://github.com/humphrey-nyanzi) · [Substack](https://humphreyn-substack.com) · [X](https://x.com/phreyn)
