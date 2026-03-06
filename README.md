@@ -1,4 +1,4 @@
-# High-Speed Running Decay Across Match Halves in a Domestic Football League
+# High-Speed Running Decay Across Match Halves in the Uganda Premier League
 
 *GPS-based physical performance analysis | 2024/25 season*
 
@@ -72,7 +72,7 @@ upl-hsr-decay/
 
 ```
 
-The raw GPS data is not included, access to full-season multi-club tracking data from the  league is not publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult One, or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
+The raw GPS data is not included; access to full-season multi-club tracking data from the  league is not publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult One or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
 
 ---
 
