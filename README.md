@@ -1,4 +1,4 @@
-# High-Speed Running Decay Across Match Halves in the Uganda Premier League
+# High-Speed Running Decay Across Match Halves in a domestic African Football League
 
 *GPS-based physical performance analysis | 2024/25 season*
 
