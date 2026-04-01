@@ -97,3 +97,5 @@ target/
 /output/
 /assets/
 .env.example
+
+/docs
