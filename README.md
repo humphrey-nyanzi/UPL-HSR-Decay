@@ -24,8 +24,8 @@ The full write-up with context, methodology, and discussion is on Substack: [lin
 | Metric | Value |
 |--------|-------|
 | Total observations | 3,441 player-match pairs |
-| Mean HSR rate — 1st half | 10.80 m/min |
-| Mean HSR rate — 2nd half | 8.11 m/min |
+| Mean HSR rate - 1st half | 10.80 m/min |
+| Mean HSR rate - 2nd half | 8.11 m/min |
 | Mean absolute decay | 2.69 m/min (24.9%) |
 | Clubs with significant decay | 16 / 16 |
 | Ratio between highest and lowest decay club | 3.8x |
