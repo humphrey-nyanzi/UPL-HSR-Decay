@@ -92,6 +92,9 @@ target/
 # Exclude trained models
 /models/
 
+# Exclude club anonymization mapping 
+/data/club_mapping.json
+
 # exclude data from source control by default
 /data/
 /output/
