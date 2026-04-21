@@ -6,7 +6,7 @@
 
 ## What this project is
 
-This analysis quantifies second-half high-speed running (HSR) decay in a domestic African football league using GPS tracking data collected across a full season. It covers all clubs in the league across up to 30 match days per club, producing what is — to my knowledge — the first GPS-based physical performance benchmark for football at this level.
+This analysis quantifies second-half high-speed running (HSR) decay in a domestic African football league using GPS tracking data collected across a full season. It covers all clubs in the league across up to 30 match days per club, producing  the first GPS-based physical performance benchmark for football at this level.
 
 The questions driving the work:
 
