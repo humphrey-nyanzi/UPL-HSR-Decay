@@ -1,4 +1,4 @@
-# High-Speed Running Decay Across Match Halves in a domestic African Football League
+# High-Speed Running Decay Across Match Halves in a Ugandan Football League
 
 *GPS-based physical performance analysis | 2024/25 season*
 
@@ -6,7 +6,7 @@
 
 ## What this project is
 
-This analysis quantifies second-half high-speed running (HSR) decay in a domestic African football league using GPS tracking data collected across a full season. It covers all clubs in the league across up to 30 match days per club, producing  the first GPS-based physical performance benchmark for football at this level.
+This analysis quantifies second-half high-speed running (HSR) decay in a Ugandan football league using GPS tracking data collected across a full season. It covers all clubs in the league across up to 30 match days per club, producing  the first GPS-based physical performance benchmark for football at this level.
 
 The questions driving the work:
 
@@ -65,14 +65,14 @@ Using a rate rather than raw distance normalises for players with different half
 ```
 upl-hsr-decay/
 ├─ notebooks/
- ├── 01_data_audit.ipynb       # Completeness checks, distribution review
- ├── 02_cleaning.ipynb         # Filtering logic, HSR rate calculation
- ├── 03_analysis.ipynb         # All statistical tests and summaries
- └── 04_visualisations.ipynb   # Chart generation, dual theme output
+├── 01_data_audit.ipynb       # Completeness checks, distribution review
+├── 02_cleaning.ipynb         # Filtering logic, HSR rate calculation
+├── 03_analysis.ipynb         # All statistical tests and summaries
+└── 04_visualisations.ipynb   # Chart generation
 
 ```
 
-The raw GPS data is not included; access to full-season multi-club tracking data from the  league is not publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult One or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
+The raw GPS data is not included; access to full-season multi-club tracking data from the  league is **NOT** publicly available. The notebooks document the full pipeline from raw export to final figures. If you work with GPS data from Catapult One or similar systems, the cleaning and analysis logic is directly transferable to your own exports.
 
 ---
 
